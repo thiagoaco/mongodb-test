@@ -16,7 +16,7 @@ app.listen(port, function(err){
     console.log("Listening on Port: " + port)
 });
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb+srv://thiago:1234@cluster0-f8dkl.mongodb.net/test?retryWrites=true&w=majority');
 mongoose.connection.on('error', (err) => { 
     console.log('Mongodb Error: ', err); 
     process.exit();
